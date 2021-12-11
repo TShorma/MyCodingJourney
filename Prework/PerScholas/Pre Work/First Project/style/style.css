@@ -1,0 +1,44 @@
+/* using this format
+        color: ;
+        font-family: ;
+        font-weight: ;
+        text-align: ;
+        text-decoration: ;
+*/
+    body{
+        background-color: rgb(139, 181, 216);
+    }
+    h2{
+        color: blue;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: bold;
+        text-align: center;
+        text-decoration: underline;
+    }
+    h3{
+        color: rgb(255, 0, 255);
+        font-family: "Times New Roman", Times, serif;
+        font-weight: large;
+        text-align: center;
+    }
+    p{
+        color: rgb(255, 21, 0);
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 15px;
+        text-align: left;
+    }
+    li{
+        color: rgb(246, 250, 3);
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 18px;
+        text-align: left;
+    }
+    button{
+        color: purple;
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 25px;
+        text-align: center;
+    }
+    table, th, td{
+  border:2px solid black;
+    }

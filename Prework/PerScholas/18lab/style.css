@@ -1,0 +1,96 @@
+/* body {
+    margin: 0;
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid grey;
+    width: 100%;
+    height: 100%;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border: 1px;
+}
+
+@media (orientation portrait) {
+    
+} 
+
+whats up fam   */
+
+
+* {
+    margin: 0;
+}
+
+.main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container2 {
+    display: flex;
+    position: relative;
+}
+
+/* pushes the text behind the boxes */
+.container2 h1 {
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 3%;
+    z-index: -99;
+    font-size: 1.7rem;
+}
+
+.box3 {
+    background: red;
+    transform-origin: top left;
+}
+
+.box4 {
+    background: blue;
+    transform-origin: left bottom;
+}
+
+.box5 {
+    background: yellow;
+    transform-origin: top right;
+}
+
+.box6 {
+    background: green;
+    transform-origin: right bottom;
+}
+
+/* box sizes and transition */
+.box3,
+.box4,
+.box5,
+.box6 {
+    width: 75px;
+    height: 75px;
+    transition: all 800ms ease-in-out;
+}
+
+/* Rotates boxes */
+.container2:hover .inner-container .box3,
+.container2:hover .inner-container .box6 {
+    transform: rotate(90deg);
+}
+
+.container2:hover .inner-container .box4,
+.container2:hover .inner-container .box5 {
+    transform: rotate(-90deg);
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="document.getElementById('test1').innerHTML=Date()">Date And Time Is:</button>
+    <p id="test1"></p>
+    <button onclick="document.getElementById('test2').innerHTML()">
+        <a href="https://www.google.com/">Google</a></button>
+    <p id="test2"></p>
+    <button onclick="document.getElementById('test3').innerHTML()">
+        <a href="https://media.istockphoto.com/photos/white-texture-background-picture-id926993450?b=1&k=20&m=926993450&s=170667a&w=0&h=vxWViBkXgTQnSO4UTtU26hLlscn9FTKYS1Jx6f-_slI=">Light</a></button>
+    <p id="test3"></p>
+    <button onclick="document.getElementById('test4').innerHTML()">
+        <a href="https://u-mercari-images.mercdn.net/photos/m73592970604_1.jpg?width=1024&height=1024&format=pjpg&auto=webp&fit=crop&_=1607839219">Dark</a></button>
+    <p id="test4"></p>
+    <ul id="menu">
+        <li class="item">HTML</li>
+        <li class="item">CSS</li>
+        <li class="item">JavaScript</li>
+        <li class="item">Java</li>
+    </ul>
+    <script>
+        let items = document.getElementsByClassName('item');
+        items[0].innerHTML="Tushar"
+        items[1].innerHTML="Is"
+        items[2].innerHTML="So"
+        items[3].innerHTML="Coool"
+
+        console.log(items[2]);
+    </script>
+</body>
+</html>

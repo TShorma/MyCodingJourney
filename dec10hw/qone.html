@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Array Displayed:</h1>
+    <h2 id="myArray">Array</h2>
+    <h1>The sum of the Array: </h1>
+    <h2 id="sumOfFirst">Secound Array</h2>
+    <script>
+        let numArray = [10, 5, 7, 5, 2, 15]
+        let totalValu = 0
+        numArray.map((x) => totalValu+=x)
+
+        console.log(numArray);
+        console.log(totalValu);
+
+        document.getElementById("myArray").innerHTML=numArray
+        document.getElementById("sumOfFirst").innerHTML=totalValu
+    </script>
+</body>
+</html>
