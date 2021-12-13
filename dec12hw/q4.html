@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="textForUser">Format: Index Value Right parenthesis User Element in that index followed by a comma to the next element</h1>
+    <h1 id="userInputArray"></h1>
+    <h1>These are the elements entered:</h1>
+    <h1 id="userInput"></h1>
+    <script>
+        const userInput=(prompt("Enter numbers and strings, place space between them for each element")).split(" ")
+        let indexCounter = 0    //HTML
+        let counter1 = 0        //Console
+        // const userMap = userInput.map(x => {console.log(indexCounter++ + ")" + x)})
+        const userMap = userInput.map(x => indexCounter++ + ") " + x)
+        const consoleUserInfo = userInput.map(x => {console.log(counter1++ + ")" + x)})
+
+        document.getElementById("userInputArray").innerHTML = `${userMap}`
+        document.getElementById("userInput").innerHTML = `${userInput}`
+    </script>
+</body>
+</html>

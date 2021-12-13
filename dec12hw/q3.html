@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="whoSwimming"></h1>
+    <h1 id="userSearch"></h1>
+    <h1 id="gender"></h1>
+    <script>
+        const userFilter = prompt("Filter through an activity: Swimmer, Basketball player or investor")
+        let person =
+        [
+            {
+            firstName: "Floyd",
+            lastName: "Mayweather",
+            activity: "swimmer",
+            gender: "male",
+            },
+            {
+            firstName: "MacKenzie",
+            lastName: "Scott",
+            activity: "swimmer",
+            gender: "female",
+            },
+            {
+            firstName: "Michael",
+            lastName: "Jordan",
+            activity: "basketball player",
+            gender: "male",
+            },
+            {
+            firstName: "Warren",
+            lastName: "Buffett",
+            activity: "investor",
+            gender: "male",
+            },
+            {
+            firstName: "Bill",
+            lastName: "Gates",
+            activity: "investor",
+            gender: "male",
+            },
+        ];
+            const searchSwim = () => person.filter((x) => x.activity === "swimmer")
+            const searchActiv = () => person.filter((y)=> y.activity === userFilter)
+            
+            const searchSwimArray = searchSwim().map((z) => z.firstName +" "+ z.lastName + " is a swimmer").join("")
+            const searchActivArray = searchActiv().map((a) => a.firstName +" "+ a.lastName + " is a "+ a.activity)
+            const searchActivArrayTwo = person.map((b) => "<p>"+b.firstName +" "+ b.lastName + " is "+ b.gender+ "</p>")
+
+            document.getElementById("whoSwimming").innerHTML = `${searchSwimArray}`
+            document.getElementById("userSearch").innerHTML = `${searchActivArray}`
+            document.getElementById("gender").innerHTML = searchActivArrayTwo.join("")
+
+            console.log(searchSwim());
+            console.log(searchActiv());
+    </script>
+</body>
+</html>

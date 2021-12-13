@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <label>User Values</label>
+    <input type="text" class="userNumbers"> -->
+    <h1 id="number1"></h1>
+    <h1 id="number2"></h1>
+    <h1 id="number3"></h1>
+    <h1 id="userLargeNumber"></h1>
+    <script>
+      const number1 = prompt("User First Number:");
+      const number2 = prompt("User Secound Number:");
+      const number3 = prompt("User Third Number:");
+      let getLargestNum = (number1, number2, number3) => {
+        if (number3 > number2 && number3 > number1) {
+          return number3;
+        } else if (number2 > number1 && number2 > number3) {
+          return number2;
+        } else {
+          return number1;
+        }
+      }
+    // console.log(getLargestNum(number1, number2, number3));
+    
+    document.getElementById("number1").innerHTML = `User First Number: ${number1}`
+    document.getElementById("number2").innerHTML = `User Secound Number: ${number2}`
+    document.getElementById("number3").innerHTML = `User Third Number: ${number3}`
+    document.getElementById("userLargeNumber").innerHTML = `The Largest Value Entered: ${getLargestNum(number1, number2, number3)}`
+    </script>
+  </body>
+</html>
